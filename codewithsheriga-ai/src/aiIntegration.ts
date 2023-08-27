@@ -2,7 +2,7 @@ import axios from "axios";
 
 
 
-async function getAIPoweredResponse(prompt: string): Promise<string>{
+async function getAIPoweredBotResponse(prompt: string): Promise<string>{
     const apiUrl= "http://localhost:3000"
 
     try{
@@ -16,4 +16,4 @@ async function getAIPoweredResponse(prompt: string): Promise<string>{
     }
 }
 
-export { getAIPoweredResponse }
+export { getAIPoweredBotResponse }

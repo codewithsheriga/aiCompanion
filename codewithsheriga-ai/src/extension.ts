@@ -1,5 +1,5 @@
 import * as vscode from 'vscode'
-import { getAIPoweredResponse } from './aiIntegration'
+import { getAIPoweredBotResponse } from './aiIntegration'
 import { resolve } from 'path/posix';
 
 
@@ -40,7 +40,7 @@ async function handleUserInput(){
 	})
 
 	//Fetch Bot Response
-	const botResponse = await getAIPoweredResponse(prompt)
+	const botResponse = await getAIPoweredBotResponse(prompt)
 
 	//Remove loading message
 	const loadingMessageLength = 'Fetching Response ...'.length

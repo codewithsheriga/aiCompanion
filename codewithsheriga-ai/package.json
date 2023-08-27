@@ -21,7 +21,7 @@
     "commands": [
       {
         "command": "extension.getAIPoweredBotResponse",
-        "title": "Get Ai- Powered Response"
+        "title": "Get Ai-Powered Response"
       }
     ]
   },
