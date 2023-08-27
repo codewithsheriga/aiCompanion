@@ -7,7 +7,7 @@ async function getAIPoweredBotResponse(prompt: string): Promise<string>{
 
     try{
         const response = await axios.post(apiUrl, {prompt})
-        return response.data.bot.trim;
+        return response.data.bot.trim();
     }
     catch(error){
         console.error("Error Fetching response:", error)

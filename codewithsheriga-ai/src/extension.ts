@@ -1,6 +1,5 @@
 import * as vscode from 'vscode'
 import { getAIPoweredBotResponse } from './aiIntegration'
-import { resolve } from 'path/posix';
 
 
 
@@ -62,7 +61,7 @@ async function handleUserInput(){
 
 }
 
-export function activate(context: vscode.ExtensionContext){
+export function activate(context: vscode.ExtensionContext){ 
 	let disposable = vscode.commands.registerCommand('extension.getAIPoweredBotResponse', async ()=>{
 		await handleUserInput()
 	})

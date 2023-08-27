@@ -12,7 +12,7 @@ This extension integrates with my AI-powered web app to provide code completions
 ## Usage
 
 1. Open a code file in Visual Studio Code.
-2. Trigger the "Get AI-Powered Bot Response" command from the command palette.
+2. Trigger the "Get AI-Powered Response" command from the command palette.
 3. Enter a prompt and receive the AI-powered bot's response as a message popup.
 
 For more information, visit the [documentation](https://link-to-your-documentation).
