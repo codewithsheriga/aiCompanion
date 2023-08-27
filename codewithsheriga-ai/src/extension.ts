@@ -3,6 +3,7 @@ import { getAIPoweredBotResponse } from './aiIntegration'
 
 
 
+
 //Typing Effect
 
 async function typeTextInEditor(editor: vscode.TextEditor, text: string){
@@ -61,7 +62,8 @@ async function handleUserInput(){
 
 }
 
-export function activate(context: vscode.ExtensionContext){ 
+export function activate(context: vscode.ExtensionContext){
+	 
 	let disposable = vscode.commands.registerCommand('extension.getAIPoweredBotResponse', async ()=>{
 		await handleUserInput()
 	})
