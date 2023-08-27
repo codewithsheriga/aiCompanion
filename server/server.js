@@ -32,7 +32,7 @@ app.post('/', async(req, res)=>{
         const prompt = req.body.prompt
         const response = await openai.completions.create({
             model: "text-davinci-003",
-            prompt: `write a function in python to add two numbers`,
+            prompt: `${prompt}`,
             temperature: 0,
             max_tokens: 3000,
             top_p: 1,
