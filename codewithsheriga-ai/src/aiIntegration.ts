@@ -3,7 +3,7 @@ import axios from "axios";
 
 
 async function getAIPoweredBotResponse(prompt: string): Promise<string>{
-    const apiUrl= "http://localhost:3000"
+    const apiUrl= "https://aicompanion-awhg.onrender.com"
 
     try{
         const response = await axios.post(apiUrl, { prompt })
